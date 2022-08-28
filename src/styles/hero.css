@@ -1,0 +1,156 @@
+.hero-container {
+	position: relative;
+	background-image: url('../assets/herobg.jpg');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	height: 800px;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.hero-main {
+	padding-top: 300px;
+	padding-left: 220px;
+}
+
+.hero-gradient {
+	z-index: 0;
+	position: absolute;
+	width: 100%;
+	height: 800px;
+	box-sizing: border-box;
+	background: linear-gradient(to right, rgba(0,0,0, 1) 0%,rgba(0,0,0, 1) 30%, rgba( 0, 0, 0, 0) 100%);
+}
+
+.gradient {
+	position: absolute;
+	width: 657px;
+	height: 657px;
+	left: -310px;
+	top: -279px;
+	background: #3E8399;
+	filter: blur(250px);
+}
+
+.hero-heading {
+	color: #FFFFFF;
+	font-size: 48px;
+	width: 646px;
+	line-height: 46px;
+	margin: 0;
+}
+
+.hero-p {
+	color: #FFFFFF;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.hero-btn {
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 890px) {
+	.hero-container {
+		height: 492px;
+	}
+	
+	.hero-main {
+		padding-top: 180px;
+		padding-left: 40px;
+	}
+	
+	.hero-gradient {
+		z-index: 0;
+		position: absolute;
+		width: 100%;
+		height: 492px;
+		box-sizing: border-box;
+		background: linear-gradient(to right, rgba(0,0,0, 1) 0%,rgba(0,0,0, 1) 25%, rgba( 0, 0, 0, 0) 100%);
+	}
+	
+	.gradient {
+		position: absolute;
+		width: 257px;
+		height: 357px;
+		left: -120px;
+		top: -149px;
+		background: #3E8399;
+		filter: blur(150px);
+	}
+	
+	.hero-heading {
+		color: #FFFFFF;
+		font-size: 36px;
+		width: 485px;
+		line-height: 34px;
+		margin: 0;
+	}
+	
+	.hero-p {
+		color: #FFFFFF;
+		font-size: 12px;
+		margin-bottom: 0;
+	}
+	
+	.hero-btn {
+		margin-top: 20px;
+	}
+	
+}
+@media screen and (max-width: 600px) {
+	.hero-container {
+		background-image: url('../assets/hmbg.jpg');
+		background-position-x: center;
+		background-position-y: bottom;
+		background-size: cover;
+		height: 500px;
+
+	}
+	
+	.hero-main {
+		padding-top: 90px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-left: 0;
+	}
+	
+	.hero-gradient {
+		z-index: 0;
+		position: absolute;
+		width: 100%;
+		height: 482px;
+		box-sizing: border-box;
+		background: linear-gradient(to bottom, rgba(0,0,0, 1) 0%,rgba(0,0,0, 1) 20%, rgba( 0, 0, 0, 0) 50%);
+	}
+	
+	.gradient {
+		display: none;
+	}
+	
+	.hero-heading {
+		color: #FFFFFF;
+		font-size: 18px;
+		max-width: 249px;
+		line-height: 17px;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.hero-p {
+		color: #FFFFFF;
+		max-width: 230px;
+		font-size: 10px;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	
+	.hero-btn {
+		margin-top: 10px;
+	}
+	
+}

@@ -1,0 +1,166 @@
+.works-container {
+	width: 100%;
+	height: 700px;
+	position: relative;
+	top: -50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.works-heading {
+	width: 312px;
+	height: 46px;
+	font-size: 48px;
+	color: #FFFFFF;
+	margin-bottom: 0;
+}
+
+.works-link {
+	margin-top: 32px;
+	display: flex;
+}
+
+.work-link {
+	height: 15px;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin: 20px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.work-link:hover {
+	color: #2D82A3;
+}
+
+.works-box {
+	display: flex;
+	margin: 20px;
+}
+
+.works-box1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.works-box2 {
+	padding: 10px;
+	align-items: center;
+	text-align: center;
+}
+
+.works-box3{
+	padding: 10px;
+}
+
+.work1 {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.work2 {
+	width: 100%;
+}
+
+.work3 {
+	width: 90%;
+}
+
+.work4 {
+	width: 100%;
+}
+
+.works-btn {
+	margin-top: 45px;
+}
+
+@media screen and (max-width: 890px) {
+	.works-container {
+		width: 100%;
+		height: 500px;
+		position: relative;
+		top: -30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.works-heading {
+		text-align: center;
+		height: 34px;
+		font-size: 36px;
+	}
+	
+	.works-link {
+		margin-top: 20px;
+	}
+	
+	.work-link {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	
+	.works-box3{
+		display: none;
+	}
+	
+	.works-btn {
+		margin-top: 25px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.works-container {
+		width: 78%;
+		height: 400px;
+		top: -20px;
+		display: flex;
+		margin: auto;
+	}
+	
+	.works-heading {
+		font-size: 20px;
+	}
+	
+	.works-link {
+		margin-top: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.work-link {
+		font-size: 12px;
+		margin-bottom: 10px;
+		margin: 0;
+		padding:10px;
+	}
+	
+	
+	.works-box {
+		display: flex;
+		margin: auto;
+	}
+	
+	.works-box1 {
+		display: none;
+	}
+	
+	.works-box2 {
+		align-items: center;
+		text-align: center;
+	}
+	
+	.work3 {
+		width: 80%;
+	}
+	
+	.works-btn {
+		margin-top: 45px;
+	}
+}

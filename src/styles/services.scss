@@ -1,0 +1,330 @@
+.services-container {
+	height: 765px;
+	width: 100%;
+	position: relative;
+	background-image: url('../assets/bgeclipse.png');
+	background-repeat: no-repeat;
+	background-position: 0px -104px;
+
+}
+.services-cicrle{
+	display: flex;
+	flex-direction: column;
+	padding-top: 251px;
+	padding-left: 120px;
+}
+
+.services-gradient {
+	position: absolute;
+	width: 657px;
+	height: 457px;
+	left: -400px;
+	top: 50px;
+	background: #3E8399;
+	filter: blur(250px);
+}
+
+.services-title {
+	width: 386px;
+	height: 159px;
+	font-size: 48px;
+	margin: 0;
+	line-height: 110.7%;
+
+	color: #FFFFFF;
+
+	span{
+		color: #2D82A3;
+	}
+}
+
+.services-p {
+	margin-top: 10px;
+	width: 276px;
+	height: 17px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #2D82A3;
+}
+
+.services-flex {
+	display: flex;
+	flex-direction: row;
+}
+.services {
+	height: 15px;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-left: 10px;
+}
+
+
+
+  @mixin on-circle($item-count, $circle-size, $item-size) {  
+	position: absolute;
+	width:  $circle-size;
+	height: $circle-size;
+	border-radius: 50%;
+	padding: 0; 
+	list-style: none;
+	top: -115px;
+	left: 300px;
+	
+	> * {
+	//   display: block;
+	  position: absolute;
+	  top:  50%; 
+	  left: 50%;
+	  margin: -($item-size / 2);
+	  width: max-content;
+
+	//   width:  $item-size;
+	//   height: $item-size;
+	@media screen and (max-width: 1120px) {
+		width: $item-size;
+	}
+	
+	  $angle: (360 / $item-count);
+	  $rot: 330;
+  
+	  @for $i from 1 through $item-count {
+		&:nth-of-type(#{$i}) {
+		  transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+		}
+  
+		$rot: $rot + $angle;
+	  }
+	}
+  }
+  
+  .circle-container {
+	@include on-circle($item-count: 20, $circle-size: 867px, $item-size: 2.5em); 
+	// margin: 5em auto 0;
+	// border: solid 5px tomato;
+	width: max-content;
+  
+	img { 
+	  display: block; 
+	  max-width: 100%; 
+	  border-radius: 50%;
+	}
+  }
+
+
+@media screen and (max-width: 890px) {
+	.services-container {
+		height: 400px;
+		width: 100%;
+		position: relative;
+		background-image: url('../assets/bgeclipse.png');
+		background-repeat: no-repeat;
+		background-size: 405px;
+		background-position: 0px -104px;
+	
+	}
+	.services-cicrle{
+		display: flex;
+		flex-direction: column;
+		padding-top: 85px;
+		padding-left: 55px;
+	}
+	
+	.services-gradient {
+		position: absolute;
+		width: 357px;
+		height: 257px;
+		left: -100px;
+		top: 50px;
+		background: #3E8399;
+		filter: blur(150px);
+	}
+	
+	.services-title {
+		width: 258px;
+		font-size: 32px;
+		height: 105px;
+		line-height: 110.7%;
+	}
+	
+	.services-p {
+		margin-top: 6px;
+		font-size: 12px;
+	}
+	
+	.services-flex {
+		display: flex;
+		flex-direction: row;
+	}
+	.services {
+		height: 15px;
+		font-size: 16px;
+		color: #FFFFFF;
+		padding-left: 10px;
+	}
+	
+	
+	
+	  @mixin on-circle($item-count, $circle-size, $item-size) {  
+		position: absolute;
+		width:  $circle-size;
+		height: $circle-size;
+		border-radius: 50%;
+		padding: 0; 
+		list-style: none;
+		top: -80px;
+		left: 155px;
+		
+		> * {
+		//   display: block;
+		  position: absolute;
+		  top:  50%; 
+		  left: 50%;
+		  margin: -($item-size / 2);
+		  width: max-content;
+	
+		//   width:  $item-size;
+		//   height: $item-size;
+		@media screen and (max-width: 800px) {
+			width: 250px;
+		}
+		
+		  $angle: (360 / $item-count);
+		  $rot: 330;
+	  
+		  @for $i from 1 through $item-count {
+			&:nth-of-type(#{$i}) {
+			  transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+			}
+	  
+			$rot: $rot + $angle;
+		  }
+		}
+	  }
+	  
+	  .circle-container {
+		@include on-circle($item-count: 20, $circle-size: 392px, $item-size: 2.5em); 
+		// margin: 5em auto 0;
+		// border: solid 5px tomato;
+		width: max-content;
+	  
+		img { 
+		  display: block; 
+		  max-width: 40%; 
+		  border-radius: 50%;
+		}
+	  }
+	
+}
+
+@media screen and (max-width: 600px) {
+	.bg {
+		height: 400px;
+		width: 100%;
+		position: relative;
+		background-image: url('../assets/bgeclipse.png');
+		background-repeat: no-repeat;
+		background-size: 359px;
+		background-position: -273px -50px;
+	
+	}
+	.services-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		height: 400px;
+		width: 78%;
+		margin: auto;
+		margin-top: 20px;
+		background-image: none;
+	}
+	.services-cicrle{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	
+	.services-gradient {
+		display: none;
+	}
+	
+	.services-title {
+		max-width: 236px;
+		font-size: 18px;
+		max-height: 40px;
+		line-height: 110.7%;
+	}
+	
+	.services-p {
+		margin-top: 3px;
+		font-size: 10px;
+	}
+	
+	.services-flex {
+		display: flex;
+		flex-direction: row;
+	}
+	.services {
+		font-size: 10px;
+		padding-left: 5px;
+	}
+
+	.pluscircle {
+		width: 15px;
+	}
+	
+	
+	  @mixin on-circle($item-count, $circle-size, $item-size) {  
+		position: absolute;
+		width:  $circle-size;
+		height: $circle-size;
+		border-radius: 50%;
+		padding: 0; 
+		list-style: none;
+		top: 0px;
+		left: -195px;
+		// @media screen and (max-width: 390px) {
+		// 	left: -120px;
+		// }
+		
+		> * {
+		//   display: block;
+		  position: relative;
+		  top:  50%; 
+		  left: 50%;
+		  margin: -($item-size / 2);
+		  width: max-content;
+	
+		//   width:  $item-size;
+		//   height: $item-size;
+		// @media screen and (max-width: 390px) {
+		// 	width: 200px;
+		// }
+		
+		  $angle: (360 / $item-count);
+		  $rot: 330;
+	  
+		  @for $i from 1 through $item-count {
+			&:nth-of-type(#{$i}) {
+			  transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+			}
+	  
+			$rot: $rot + $angle;
+		  }
+		}
+	  }
+
+	  
+	  .circle-container {
+		@include on-circle($item-count: 20, $circle-size: 352px, $item-size: 4.5em); 
+		// margin: 5em auto 0;
+		// border: solid 5px tomato;
+		width: max-content;
+	  
+		img { 
+		  display: block; 
+		  max-width: 100%; 
+		  border-radius: 50%;
+		}
+	  }
+	
+}

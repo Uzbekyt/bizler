@@ -1,0 +1,81 @@
+.banner-container {
+	height: 222px;
+	width: 100%;
+	background-image: url('../assets/bannerbg.jpg');
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.banner-heading {
+	width: 400px;
+	height: 80px;
+	font-size: 36px;
+	line-height: 40px;
+	color: #FFFFFF;
+}
+
+.blue-text {
+	color: #26A5E4;
+}
+
+.banner-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.banner-p {
+	width: 295px;
+	height: 26px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.tg-icon {
+	width: 155px;
+	height: 155px;
+}
+
+@media screen and (max-width: 890px) {
+	.banner-container {
+		height: 143px;
+		width: 100%;
+	}
+	
+	.banner-heading {
+		font-size: 32px;
+		line-height: 110%;
+	}
+	
+	.banner-2 {
+		display: none;
+	}
+	
+	.tg-icon {
+		width: 124px;
+		height: 124px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.banner-container {
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	
+	.banner-heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 200px;
+		font-size: 18px;
+		line-height: 110%;
+	}
+	.tg-icon {
+		width: 66px;
+		height: 66px;
+	}
+}
